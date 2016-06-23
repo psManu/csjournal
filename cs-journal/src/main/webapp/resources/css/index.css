@@ -1,0 +1,59 @@
+	.headerTitle {
+		font-family: Lobster;
+		font-size: 24px;
+		font-style: normal;
+		font-variant: normal;
+		font-weight: 500;
+		line-height: 26.4px;
+	}
+	#headerTitle {
+		font-family: Lobster;
+		font-size: 24px;
+		font-style: normal;
+		font-variant: normal;
+		font-weight: 500;
+		line-height: 26.4px;
+	}
+	
+	#slideShowImg  {
+		max-height : 300px;
+		min-height : 300px;
+		min-width:100%;
+	}
+	
+	#bodyContainer {
+		padding: 0px;
+		margin-left: 0px;
+		margin-top: 10px;
+		min-width: 100%;
+	}
+	#headerTitle {
+		color: green;
+		margin-left: 25%;
+	}
+	#searchBar {
+		max-width:80%;
+		display:inline-block;
+		padding:3px;
+		margin-top:6px;
+	}
+	.tags p:hover {
+		 font-size:120%;
+	}
+	.tags p { 
+		font-size:80%;
+		padding:5px;
+		margin:0px;
+	}
+	.art_ImgDiv {
+		min-height:150px;
+		max-height:150px;
+		min-width: 80%;
+		max-width: 80%;
+	}
+	.artDiv_title {
+		max-width: 80%;
+		min-width: 80%;
+		width: 11em;
+		word-wrap: break-word;
+	}

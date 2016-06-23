@@ -1,0 +1,34 @@
+﻿CREATE TABLE adminAccounts(
+   ID  SERIAL PRIMARY KEY,
+   username    CHAR(50)   NOT NULL,
+   name           TEXT      NOT NULL,
+   password       CHAR(20)       NOT NULL,
+   propic        TEXT   
+);
+
+CREATE TABLE articles(
+   art_id  SERIAL PRIMARY KEY,
+   art_title           TEXT      NOT NULL,
+   art_author 			CHAR(20) 	  NOT NULL,
+   last_modified   DATE       NOT NULL,
+   art_content        TEXT,
+   thumbnail_url   TEXT,
+   ispublic BOOLEAN DEFAULT FALSE   
+);
+
+CREATE TABLE art_rel_articles(
+   art_id  INTEGER NOT NULL,
+   rel_art_id INTEGER NOT NULL  
+);
+
+
+
+CREATE TABLE categories(
+   cat_id  SERIAL PRIMARY KEY,
+   cat_name   CHAR(50)     NOT NULL   
+);
+
+CREATE TABLE category_art(
+   cat_ID INTEGER NOT NULL,
+   art_ID INTEGER NOT NULL   
+);
